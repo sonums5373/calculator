@@ -7,7 +7,7 @@
     <title>Simple Calculator</title>
     <style>
         .container {
-            margin: 2px auto;
+            margin: 20px auto;
             border: 2px solid #010101;
             border-radius: 10px;
             padding: 35px;
@@ -28,14 +28,26 @@
         h2 {
             color: #ddd;
         }
-        div{
+
+        div {
             background-color: rgb(50, 21, 2);
             width: 100%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            input {
+                width: 40px;
+                padding: 8px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container w-75">
+    <div class="container">
         <h2>Simple Calculator</h2>
         <form name="calculator">
             <input type="text" name="display" id="display" style="width: 220px; margin-bottom: 10px; height: 50px;" readonly>
